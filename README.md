@@ -1,10 +1,9 @@
-**README.md**
-
 ### E-Commerce Product Page
 
 **Description:**
 
-A simple product page designed to showcase a single product, allowing users to share their reviews and add the product to their cart.
+A simple product page designed to showcase a single product, allowing users to share their reviews and add the product
+to their cart.
 
 **Key Features:**
 
@@ -14,7 +13,7 @@ A simple product page designed to showcase a single product, allowing users to s
 
 **Installation:**
 
-1. Clone the repository: `git clone https://github.com/yourusername/e-commerce-product-page.git`
+1. Clone the repository: `git clone https://github.com/saeeda7n/e-commerce-product-page.git`
 2. Install dependencies: `npm install`
 
 **Usage:**
@@ -28,11 +27,3 @@ A simple product page designed to showcase a single product, allowing users to s
 * React
 * Tailwind CSS
 * Framer Motion
-
-**Contributing:**
-
-Contributions are currently closed.
-
-**License:**
-
-[Specify the license you're using, e.g., MIT]
