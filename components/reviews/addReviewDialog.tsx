@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { MessageCircle, Send, XIcon } from "lucide-react";
-import { RateBox } from "@/components/rateBox";
+import { RateBox } from "@/components/reviews/rateBox";
 import Button from "@/components/ui/button";
 import Input, { InputErrorMessage } from "@/components/ui/input";
 

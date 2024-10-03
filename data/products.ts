@@ -44,7 +44,15 @@ export const PRODUCTS: Array<TProduct> = [
     rate: 3,
     body:
      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Animi, at blanditiis culpa debitis dolorem, dolorum ea exercitationem nobis,\n perferendis perspiciatis provident quis quo quos repellat repellendus sunt unde velit voluptatem!",
-    user: { name: "NullEe", id: "0" },
+    user: { name: "NullEe_", id: "0" },
+    createdAt: "2024/2/10",
+   },
+   {
+    id: "111",
+    rate: 5,
+    body:
+     "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Animi, xercitationem nobis,\n perferendis perspiciatis provident quis quo quos repellat repellendus sunt unde velit voluptatem!",
+    user: { name: "_NullEe_", id: "0" },
     createdAt: "2024/2/10",
    },
   ],
@@ -101,9 +109,22 @@ export const PRODUCTS: Array<TProduct> = [
     rate: 4,
     body:
      "Lorem ipsum dolor sit amet, consectetur adipisicing elit.\n Animi, at blanditiis culpa debitis dolorem, dolorum ea exercitationem nobis,\n perferendis perspiciatis provident quis quo quos repellat repellendus sunt unde velit voluptatem!",
-    user: { name: "Saeed Akhshijan", id: "1" },
+    user: { name: "Saeed_", id: "1" },
     createdAt: "2024/2/10",
    },
   ],
  },
 ];
+
+// const a = {
+//  choices: {
+//   variants: {
+//    colors: "Red",
+//    sizes: "sm",
+//   },
+//   price: {
+//    price: 52,
+//    formattedPrice: "52 $",
+//   },
+//  },
+// };

@@ -1,11 +1,11 @@
 "use client";
 import { Info, MessageCircle, MessagesSquare } from "lucide-react";
-import { ReviewCard } from "@/components/reviewCard";
-import { StarBox } from "@/components/starBox";
+import { ReviewCard } from "@/components/reviews/reviewCard";
+import { StarBox } from "@/components/reviews/starBox";
 import { useProductRate } from "@/hooks/useProductRate";
 import Button from "@/components/ui/button";
 import { useState } from "react";
-import { AddReviewDialog } from "@/components/addReviewDialog";
+import { AddReviewDialog } from "@/components/reviews/addReviewDialog";
 
 type ProductReviewsProps = {
  comments: Array<TComment>;

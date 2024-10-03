@@ -1,4 +1,4 @@
-import { StarBox } from "@/components/starBox";
+import { StarBox } from "@/components/reviews/starBox";
 
 type ReviewCardProps = {
  comment: TComment;
