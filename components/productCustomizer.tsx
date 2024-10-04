@@ -5,7 +5,7 @@ import SizePicker from "@/components/ui/sizePicker";
 import React, { PropsWithChildren, useRef, useState } from "react";
 import { ShoppingCart } from "lucide-react";
 import NumberInput from "@/components/ui/numberInput";
-import { useCart } from "@/providers/cartProvider";
+import { useCart } from "@/providers/cartContextProvider";
 
 type ProductCustomizerProps = {
  product: TProduct;

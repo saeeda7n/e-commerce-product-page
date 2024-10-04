@@ -2,7 +2,7 @@
 import { ShoppingCart, Trash } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/utils/cn";
-import { useCart } from "@/providers/cartProvider";
+import { useCart } from "@/providers/cartContextProvider";
 import Link from "next/link";
 
 type ShoppingCartCardProps = {

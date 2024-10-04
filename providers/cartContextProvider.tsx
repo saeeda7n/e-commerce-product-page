@@ -10,7 +10,7 @@ import React, {
 type CartProps = PropsWithChildren;
 
 const cartContext = createContext<null | TCartContext>(null);
-const CartProvider = ({ children }: CartProps) => {
+const CartContextProvider = ({ children }: CartProps) => {
  const [cart, setCart] = useState<Array<TCartItem>>([]);
  const totalOrders = useMemo(
   () => cart.reduce((total, item) => total + item.qty, 0),
@@ -31,7 +31,7 @@ const CartProvider = ({ children }: CartProps) => {
  }
 };
 
-export default CartProvider;
+export default CartContextProvider;
 
 export const useCart = () => {
  const context = useContext(cartContext);

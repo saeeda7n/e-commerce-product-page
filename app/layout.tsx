@@ -4,7 +4,7 @@ import { PropsWithChildren } from "react";
 import { lexend } from "@/utils/fonts";
 import { cn } from "@/utils/cn";
 import { Header } from "@/components/header";
-import CartProvider from "@/providers/cartProvider";
+import CartContextProvider from "@/providers/cartContextProvider";
 
 export const metadata: Metadata = {
  title: "E-Commerce Product Page",
@@ -18,14 +18,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
   <html lang="en">
    <body
     className={cn(
-     "font-lexend min-h-screen bg-white antialiased selection:bg-zinc-950 selection:text-gray-50",
+     "min-h-screen bg-white font-lexend antialiased selection:bg-zinc-950 selection:text-gray-50",
      lexend.variable,
     )}
    >
-    <CartProvider>
+    <CartContextProvider>
      <Header />
      <main>{children}</main>
-    </CartProvider>
+    </CartContextProvider>
    </body>
   </html>
  );
