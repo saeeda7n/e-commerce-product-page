@@ -1,7 +1,7 @@
-"use client";
 import { PRODUCTS } from "@/data/products";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/ui/button";
 
 export default function Home() {
  return (
@@ -17,10 +17,7 @@ export default function Home() {
 
 function ProductCard({ product }: { product: TProduct }) {
  return (
-  <Link
-   className="flex w-72 flex-col overflow-hidden rounded-lg border-2"
-   href={`/product/${product.slug}`}
-  >
+  <div className="flex w-72 flex-col overflow-hidden rounded-lg border-2">
    <Image
     src={product.images.at(0)!.src}
     alt={product.name}
@@ -28,12 +25,17 @@ function ProductCard({ product }: { product: TProduct }) {
     width={450}
     height={450}
    />
-   <div className="p-4">
+   <div className="p-3">
     <span className="text-2xl font-bold text-gray-700">
      {product.price.formattedPrice}
     </span>
-    <h2 className="font-medium">{product.name}</h2>
+    <h2 className="font-medium">
+     <Link href={`/product/${product.slug}`}>{product.name}</Link>
+    </h2>
+    <Link href={`/product/${product.slug}`}>
+     <Button className="mt-5 w-full">{product.name}</Button>
+    </Link>
    </div>
-  </Link>
+  </div>
  );
 }
